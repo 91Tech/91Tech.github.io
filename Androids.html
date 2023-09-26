@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Androids - 91Tech</title>
+    <style>
+        /* Global styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif; /* Use Arial as the font family (replace with iPhone font) */
+            background-color: #f0f0f0; /* Background color for the body */
+        }
+
+        /* Centered container */
+        .center-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; /* Center vertically within viewport */
+        }
+
+        /* Header styles */
+        header {
+            background: none; /* Remove background */
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            font-family: 'Helvetica Neue', sans-serif; /* iPhone/apple thin font */
+            font-weight: 300; /* Thin font weight */
+            color: #ff6b81; /* Text color */
+            margin: 0; /* Remove default margin */
+        }
+
+        /* Navigation menu styles */
+        nav {
+            background: none; /* Remove background */
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black; /* Text color */
+            font-family: 'Arial', sans-serif; /* Use Arial as the font family (replace with iPhone font) */
+            transition: color 0.3s, background-color 0.3s; /* Smooth color transition */
+        }
+
+        nav a:hover {
+            color: #ff6b81; /* Change text color on hover */
+            background-color: transparent; /* Remove background color on hover */
+        }
+
+        /* Product card container styles */
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Center horizontally */
+            align-items: flex-start; /* Align to the top */
+            padding: 20px;
+        }
+
+        /* Product card styles */
+        .product-card {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 20px;
+            width: calc(33.33% - 40px); /* Adjusted width for 3 products in a row with spacing */
+            background-color: white; /* White background */
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Subtle box shadow */
+            transition: transform 0.2s; /* Smooth transform transition */
+            text-align: center;
+        }
+
+        .product-card h2 {
+            font-size: 18px;
+            margin: 0;
+            color: black; /* Black, bold product name */
+            font-weight: bold;
+        }
+
+        .product-card p {
+            font-size: 14px;
+            color: #666; /* Grey price */
+            font-weight: 300; /* Thin font weight */
+        }
+
+        /* Buy Now button container styles */
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center horizontally */
+        }
+
+        /* Buy Now button styles */
+        .buy-now-button {
+            background: #ff6b81;
+            border: none;
+            border-radius: 5px;
+            padding: 8px 12px;
+            margin: 10px auto; /* Center the button horizontally */
+            cursor: pointer;
+            max-width: 100%; /* Ensure button doesn't overflow the card */
+            width: 200px;
+            color: #fff;
+            font-size: 18px;
+            font-weight: 700;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        /* Stock count styles */
+        .stock-count {
+            font-size: 12px;
+            color: #666; /* Grey color */
+            font-weight: 300; /* Thin font weight */
+            margin-top: 5px; /* Adjust spacing as needed */
+        }
+
+        /* Hover effect to make it pop out slightly */
+        .product-card:hover {
+            transform: translateY(-6px);
+        }
+
+        /* Media query for smaller screens (e.g., mobile devices) */
+        @media (max-width: 768px) {
+            .product-card {
+                width: calc(50% - 40px); /* Adjusted width for 2 products in a row with spacing */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="center-container">
+        <header>
+            <h1>91Tech</h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="https://91tech.github.io">Home</a></li>
+                <li><a href="https://91tech.github.io/Consoles">Consoles</a></li>
+                <li><a href="https://91tech.github.io/iPhones">iPhones</a></li>
+                <li><a href="https://91tech.github.io/Androids">Androids</a></li>
+            </ul>
+        </nav>
+
+        <!-- Product card container -->
+        <div class="product-container">
+            <!-- Product cards (3 in a row) -->
+            <div class="product-card">
+                <h2>Samsung Galaxy A5 (Refurbished)</h2>
+                <p>Price: $78.00</p>
+                <div class="button-container">
+                    <a class="buy-now-button" href="#">Buy Now</a>
+                </div>
+                <p class="stock-count">In Stock: 2</p> <!-- Replace "XX" with actual stock count -->
+            </div>
+
+            <div class="product-card">
+                <h2>LG K41S (Refurbished)</h2>
+                <p>Price: $65.00</p>
+                <div class="button-container">
+                    <a class="buy-now-button" href="#">Buy Now</a>
+                </div>
+                <p class="stock-count">In Stock: 5</p> <!-- Replace "XX" with actual stock count -->
+            </div>
+
+            <div class="product-card">
+                <h2>LG K20 (Refurbished)</h2>
+                <p>Price: $43.00</p>
+                <div class="button-container">
+                    <a class="buy-now-button" href="#">Buy Now</a>
+                </div>
+                <p class="stock-count">In Stock: 4</p> <!-- Replace "XX" with actual stock count -->
+            </div>
+            <div class="product-card">
+                <h2>Samsung Galaxy S21 (Refurbished)</h2>
+                <p>Price: $325.00</p>
+                <div class="button-container">
+                    <a class="buy-now-button" href="#">Buy Now</a>
+                </div>
+                <p class="stock-count">In Stock: 1</p> <!-- Replace "XX" with actual stock count -->
+            </div>
+            <div class="product-card">
+                <h2>Samsung Galaxy Z Fold2 (Refurbished)</h2>
+                <p>Price: $250.00</p>
+                <div class="button-container">
+                    <a class="buy-now-button" href="#">Buy Now</a>
+                </div>
+                <p class="stock-count">In Stock: 3</p> <!-- Replace "XX" with actual stock count -->
+            </div>
+            <div class="product-card">
+                <h2>Google Pixel 5 (Refurbished)</h2>
+                <p>Price: $120.00</p>
+                <div class="button-container">
+                    <a class="buy-now-button" href="#">Buy Now</a>
+                </div>
+                <p class="stock-count">In Stock: 1</p> <!-- Replace "XX" with actual stock count -->
+            </div>
+            <div class="product-card">
+                <h2>Huawei Honor 5X (Refurbished)</h2>
+                <p>Price: $37.00</p>
+                <div class="button-container">
+                    <a class="buy-now-button" href="#">Buy Now</a>
+                </div>
+                <p class="stock-count">In Stock: 13</p> <!-- Replace "XX" with actual stock count -->
+            </div>
+            <div class="product-card">
+                <h2>LG Phoenix 5 (Refurbished)</h2>
+                <p>Price: $54.00</p>
+                <div class="button-container">
+                    <a class="buy-now-button" href="#">Buy Now</a>
+                </div>
+                <p class="stock-count">In Stock: 5</p> <!-- Replace "XX" with actual stock count -->
+            </div>
+            <div class="product-card">
+                <h2>ZTE Blade A31 (Refurbished)</h2>
+                <p>Price: $80.00</p>
+                <div class="button-container">
+                    <a class="buy-now-button" href="#">Buy Now</a>
+                </div>
+                <p class="stock-count">In Stock: 15</p> <!-- Replace "XX" with actual stock count -->
+            </div>
+            <div class="product-card">
+                <h2>Revvlry Plus XT1965T (Refurbished)</h2>
+                <p>Price: $57.00</p>
+                <div class="button-container">
+                    <a class="buy-now-button" href="#">Buy Now</a>
+                </div>
+                <p class="stock-count">In Stock: 7</p> <!-- Replace "XX" with actual stock count -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Rest of your website content goes here -->
+
+</body>
+</html>
