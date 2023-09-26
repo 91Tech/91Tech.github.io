@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You For Your Purchase - Your Shop Name</title>
+    <style>
+        /* Global styles (You can reuse the styles from your existing code) */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif; /* Use Arial as the font family (replace with iPhone font) */
+            background-color: #f0f0f0; /* Background color for the body */
+        }
+
+        /* Header styles (You can reuse the styles from your existing code) */
+        header {
+            background: none; /* Remove background */
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            font-family: 'Helvetica Neue', sans-serif; /* iPhone/apple thin font */
+            font-weight: 300; /* Thin font weight */
+            color: #ff6b81; /* Text color */
+            margin: 0; /* Remove default margin */
+        }
+
+        /* Navigation menu styles (You can reuse the styles from your existing code) */
+        nav {
+            background: none; /* Remove background */
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black; /* Text color */
+            font-family: 'Arial', sans-serif; /* Use Arial as the font family (replace with iPhone font) */
+            transition: color 0.3s, background-color 0.3s; /* Smooth color transition */
+        }
+
+        nav a:hover {
+            color: #ff6b81; /* Change text color on hover */
+            background-color: transparent; /* Remove background color on hover */
+        }
+
+        /* Thank You page styles */
+        .thank-you-container {
+            text-align: center;
+            padding: 40px;
+        }
+
+        .card {
+            background-color: white; /* White background */
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Subtle box shadow */
+            text-align: center; /* Center text content */
+        }
+
+        .thank-you-message {
+            font-size: 24px;
+            font-weight: 700; /* Bold font weight */
+            margin: 0;
+        }
+
+        .order-id {
+            font-size: 18px;
+            margin-top: 10px;
+            position: relative;
+        }
+
+        .shipping-info {
+            font-size: 14px;
+            color: #666; /* Thin grey text color */
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>91Tech</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="https://91tech.github.io">Home</a></li>
+            <li><a href="https://91tech.github.io/Consoles">Consoles</a></li>
+            <li><a href="https://91tech.github.io/iPhones">iPhones</a></li>
+            <li><a href="https://91tech.github.io/Androids">Androids</a></li>
+        </ul>
+    </nav>
+
+    <!-- Thank You page content -->
+    <div class="thank-you-container">
+        <div class="card">
+            <p class="thank-you-message">Thank You For Your Purchase</p>
+            <p class="order-id" id="order-id">Order ID: <span id="order-number"></span></p>
+            <p class="shipping-info">Items are usually shipped within 3 - 4 business days.</p>
+        </div>
+    </div>
+
+    <!-- JavaScript to generate a random Order ID -->
+    <script>
+        // Generate a random Order ID between 1 and 1000000
+        const minOrderId = 1;
+        const maxOrderId = 1000000;
+        const randomOrderId = Math.floor(Math.random() * (maxOrderId - minOrderId + 1)) + minOrderId;
+        
+        // Display the generated Order ID
+        document.getElementById('order-number').textContent = randomOrderId;
+    </script>
+
+    <!-- Rest of your website content goes here -->
+
+</body>
+</html>
